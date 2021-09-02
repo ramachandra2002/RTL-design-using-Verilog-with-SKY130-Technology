@@ -52,6 +52,8 @@ By using the same steps and command we can view the tools installed in the *vsdf
 
 ![P5](https://user-images.githubusercontent.com/89923461/131805741-695fc4d3-bf2f-47e6-af9a-31973dbd9da8.jpg)
 
+## Simulation using iVerilog and gtkwave
+
 To simulate the verilog design using iVerilog, we must write the command 
 
 `iverilog <file_name.v> <tb_file_name.v>`
@@ -60,7 +62,22 @@ For example, lets take a multiplexer design (***good_mux.v***) from the director
 
 `iverilog good_mux.v tb_good_mux.v`
 
-After the command, there will a file (***a.out***) created.
+After the command, there will be a file (***a.out***) created in the *verilog_files* directory.
+
+![P6](https://user-images.githubusercontent.com/89923461/131810257-f6d04c7f-60fa-4f23-bacc-10feeb81303f.jpg)
+
+Now we must execute the *a.out* file using `./a.out`, which eventually dumps the *.vcd* file
+
+```
+ramachandra@rtlworkshop:~/Desktop/VLSI/sky130RTLDesignAndSynthesisWorkshop/verilog_files$ ./a.out
+VCD info: dumpfile tb_good_mux.vcd opened for output.
+```
+
+
+
+
+
+
 
 
 
