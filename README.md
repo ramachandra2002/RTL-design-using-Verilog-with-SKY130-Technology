@@ -26,9 +26,10 @@ The design and the testbench is applied to the simulator *iVerilog*. As we alrea
 
 ### Introduction to Lab
 Before staring the simulation, we must setup the essential files fot the lab. First of all we must create a directory called ***VLSI*** using the terminal.
-
 `mkdir VLSI`
-
+After creating the VLSI directory, we must *git clone* some repositories through the given commands.
+For vsdflow, `git clone https://github.com/kunalg123/vsdflow.git`
+For RTL Design and Synthesis Workshop, `git clone https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git`
 
 
 
