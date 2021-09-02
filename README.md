@@ -3,8 +3,7 @@
 
 ### Required Terminologies 
 #### Simulator
-A Simulator is a tool for checking the RTL design which is designed according to the given specifications. In this workshop we used a open-source simulator called *iVerilog* for the design simulations. To know more about iVerilog, click 
-[here] (http://iverilog.icarus.com/)
+A Simulator is a tool for checking the RTL design which is designed according to the given specifications. In this workshop we used a open-source simulator called *iVerilog* for the design simulations. To know more about iVerilog, click [here](http://iverilog.icarus.com/)
 
 #### Design
 The Verilog code created according with the given specification to meet certain functionalities is a *Design*.
@@ -24,6 +23,11 @@ Simulator looks for the changes in the input and for every single input change, 
 The design and the testbench is applied to the simulator *iVerilog*. As we already know the simulator looks for the changes in the input and dumps the changes in the output as a *.vcd* file.(*.vcd stands for Value change dump format*). To view this *.vcd* file, we can use the *gtkwave* tool for viewing the waveform and verify the function of the design.
 
 ![P2](https://user-images.githubusercontent.com/89923461/131781245-73a1a50b-c52b-4e69-9b72-ca53cad281c6.jpg)
+
+### Introduction to Lab
+Before staring the simulation, we must setup the essential files fot the lab. First of all we must create a directory called ***VLSI*** using the terminal.
+
+' mkdir VLSI '
 
 
 
