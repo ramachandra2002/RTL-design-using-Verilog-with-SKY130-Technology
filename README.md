@@ -8,7 +8,7 @@
 
 ## Required Terminologies 
 ### Simulator
-A Simulator is a tool for checking the RTL design which is designed according to the given specifications. In this workshop we used a open-source simulator called *iVerilog* for the design simulations. To know more about iVerilog, click [here](http://iverilog.icarus.com/)
+A Simulator is a tool for checking the RTL design which is designed according to the given specifications. In this workshop we used a open-source simulator called *iVerilog* for the design simulations. To know more about iVerilog, click [here](http://iverilog.icarus.com/).
 
 ### Design
 The Verilog code created according with the given specification to meet certain functionalities is a *Design*.
