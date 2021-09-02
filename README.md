@@ -1,4 +1,4 @@
-# RTL-design-using-Verilog-with-SKY130-Technology
+# RTL design using Verilog with SKY130 Technology
 ## Date: 1 - 5 September 2021
 ![Verilog-flyer](https://user-images.githubusercontent.com/89923461/131783295-c3fc9552-54ea-4c48-94eb-b773fe9f84e5.png)
 
