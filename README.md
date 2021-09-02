@@ -27,7 +27,7 @@ The design and the testbench is applied to the simulator *iVerilog*. As we alrea
 ### Introduction to Lab
 Before staring the simulation, we must setup the essential files fot the lab. First of all we must create a directory called ***VLSI*** using the terminal.
 
-' mkdir VLSI '
+'' mkdir VLSI ''
 
 
 
