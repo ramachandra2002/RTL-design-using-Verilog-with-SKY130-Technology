@@ -131,6 +131,12 @@ To verify the synthesis, we must simulate using *iVerilog* by loading the netlis
 
 ![P9](https://user-images.githubusercontent.com/89923461/131820299-803b0ad8-0bf2-4ccc-8a99-4c8c1a912912.jpg)
 
+## Logic Synthesis
+
+## RTL Design
+
+uruirvnirn rwubvfbiur nbiutnbut
+
 
 
 
