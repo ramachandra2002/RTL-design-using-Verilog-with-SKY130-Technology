@@ -121,6 +121,17 @@ After launching the *gtkwave* simulator, under the uut (*unit under test*) we ca
 
 ## Introduction to Yosys
 
+Synthesizer is a tool for the conversion of RTL Design to Netlist. For this workshop, we are going to use the open-source synthesizer, *Yosys*. When *.lib* and Design are applied to the Yosys, Netlist of the design is resulted.
+
+![P8](https://user-images.githubusercontent.com/89923461/131818699-99fe95e0-6c41-43c7-94ee-fb271335a6dd.jpg)
+
+To verify the synthesis, we must simulate using *iVerilog* by loading the netlist and testbench. Get that resulted *.vcd* file and simulate and observe the waveform using the *gtkwave* tool.
+
+>Note: Stimulus provided must be same as output observed during RTL design simulation. We can use the same testbench which we used for the RTL design simulation.
+
+![P9](https://user-images.githubusercontent.com/89923461/131820299-803b0ad8-0bf2-4ccc-8a99-4c8c1a912912.jpg)
+
+
 
 
 
