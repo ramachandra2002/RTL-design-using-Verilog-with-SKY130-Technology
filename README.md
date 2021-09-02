@@ -1,5 +1,5 @@
 # RTL-design-using-Verilog-with-SKY130-Technology
-## 1 to 5 September 2021
+## Date: 1 - 5 September 2021
 ![Verilog-flyer](https://user-images.githubusercontent.com/89923461/131783295-c3fc9552-54ea-4c48-94eb-b773fe9f84e5.png)
 
 # Day 1 - Introduction to Verilog RTL design and Synthesis
