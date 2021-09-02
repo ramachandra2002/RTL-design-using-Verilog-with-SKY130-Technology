@@ -40,7 +40,36 @@ For vsdflow, `git clone https://github.com/kunalg123/vsdflow.git`
 
 For RTL Design and Synthesis Workshop, `git clone https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git`
 
-After git cloning we can see that new directories
+After git cloning we can see that two new directories (*sky130RTLDesignAndSynthesisWorkshop* and *vsdflow*) have been created in the VLSI directory. To see all the directories in the VLSI, type `ls` command.
+
+![P3](https://user-images.githubusercontent.com/89923461/131804662-ce517e6c-3654-495e-b8b6-6271630699c5.jpg)
+
+By changing directory using `cd` command, we can change the directory to *sky130RTLDesignAndSynthesisWorkshop* and view the files in *verilog_files* directory. From the list of files, we can see that there are files with a ***file name.v*** and also a file with name ***tb_file_name.v***. Those files are the design file and the corresponding testbench file respectively.
+
+![P4](https://user-images.githubusercontent.com/89923461/131805428-26b84e20-8ec4-4720-8c28-50785413160f.jpg)
+
+By using the same steps and command we can view the tools installed in the *vsdflow* directory.
+
+![P5](https://user-images.githubusercontent.com/89923461/131805741-695fc4d3-bf2f-47e6-af9a-31973dbd9da8.jpg)
+
+To simulate the verilog design using iVerilog, we must write the command 
+
+`iverilog <file_name.v> <tb_file_name.v>`
+
+For example, lets take a multiplexer design (***good_mux.v***) from the directory and simulate using the command,
+
+`iverilog good_mux.v tb_good_mux.v`
+
+
+
+
+
+
+
+
+
+
+
 
 
 
