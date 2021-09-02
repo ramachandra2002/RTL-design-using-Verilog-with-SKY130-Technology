@@ -60,6 +60,8 @@ For example, lets take a multiplexer design (***good_mux.v***) from the director
 
 `iverilog good_mux.v tb_good_mux.v`
 
+After the command, there will a file (***a.out***) created.
+
 
 
 
