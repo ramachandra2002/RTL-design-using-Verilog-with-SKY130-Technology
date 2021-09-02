@@ -48,6 +48,45 @@ By changing directory using `cd` command, we can change the directory to *sky130
 
 ![P4](https://user-images.githubusercontent.com/89923461/131805428-26b84e20-8ec4-4720-8c28-50785413160f.jpg)
 
+Now, let us view a verilog file using the command `gvim <verilog_file.v>`. For example let us take multiplexer design,
+
+`gvim tb_good_mux.v`
+
+Now a editor will be opened displaying the verilog testbench code for the multiplexer.
+
+```
+`timescale 1ns / 1ps
+module tb_good_mux;
+	// Inputs
+	reg i0,i1,sel;
+	// Outputs
+	wire y;
+
+        // Instantiate the Unit Under Test (UUT)
+	good_mux uut (
+		.sel(sel),
+		.i0(i0),
+		.i1(i1),
+		.y(y)
+	);
+
+	initial begin
+	$dumpfile("tb_good_mux.vcd");
+	$dumpvars(0,tb_good_mux);
+	// Initialize Inputs
+	sel = 0;
+	i0 = 0;
+	i1 = 0;
+	#300 $finish;
+	end
+
+always #75 sel = ~sel;
+always #10 i0 = ~i0;
+always #55 i1 = ~i1;
+endmodule
+
+```
+
 By using the same steps and command we can view the tools installed in the *vsdflow* directory.
 
 ![P5](https://user-images.githubusercontent.com/89923461/131805741-695fc4d3-bf2f-47e6-af9a-31973dbd9da8.jpg)
@@ -72,6 +111,14 @@ Now we must execute the *a.out* file using `./a.out`, which eventually dumps the
 ramachandra@rtlworkshop:~/Desktop/VLSI/sky130RTLDesignAndSynthesisWorkshop/verilog_files$ ./a.out
 VCD info: dumpfile tb_good_mux.vcd opened for output.
 ```
+The resulted *tb_good_mux.vcd* file can be viewed through waveform viewing tool, ***gtkwave***. To launch the *gtkwave* tool, the command is
+
+`gtkwave tb_good_mux.vcd`
+
+After launching the *gtkwave* simulator, under the uut (*unit under test*) we can drag the inputs and output signals ( *i0, i1, sel, y*). Adjust the time by zoom fit to view the entire 300 ns to see input and output waveform.
+
+![P7](https://user-images.githubusercontent.com/89923461/131813333-97d1d7d3-50bc-45ff-9fe7-aa29c2d635b4.jpg)
+
 
 
 
