@@ -119,6 +119,11 @@ After launching the *gtkwave* simulator, under the uut (*unit under test*) we ca
 
 ![P7](https://user-images.githubusercontent.com/89923461/131813333-97d1d7d3-50bc-45ff-9fe7-aa29c2d635b4.jpg)
 
+## Introduction to Yosys
+
+
+
+
 
 
 
