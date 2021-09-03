@@ -158,6 +158,14 @@ Synthesis is the RTL design to the gate level translation, the *design  code* wh
 
 
 
+# Day 2 - Timing libs, hierarchial vs flat synthesis efficient flop coding styles
+
+# Day 3 - Combinational and Sequential Optimizations
+
+# Day 4 - GLS, blocking vs non-blocking and Synthesis-Simulation mismatch
+
+# Day 5 - If, case, for loop and for generate
+
 
 
 
