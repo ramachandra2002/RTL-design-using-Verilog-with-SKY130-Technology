@@ -135,11 +135,23 @@ To verify the synthesis, we must simulate using *iVerilog* by loading the netlis
 
 ![P9](https://user-images.githubusercontent.com/89923461/131820299-803b0ad8-0bf2-4ccc-8a99-4c8c1a912912.jpg)
 
-## Logic Synthesis
-
 ## RTL Design
 
-uruirvnirn rwubvfbiur nbiutnbut
+RTL Design is the behavioral representation of the required specification in a HDL (*Hardware Description Language*). This is what a RTL design code in Verilog looks like,
+
+```
+module sample_code (input clk,rst, output result,done);
+
+always @ (posedge clk, posedge rst)
+  if (rst)
+    -----------
+  else
+    -----------
+endmodule
+
+```
+
+
 
 
 
