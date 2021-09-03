@@ -179,6 +179,7 @@ Here in this setup, to know about the maximum clock frequency (*minimum clock pe
 
 
 
+
 # Day 2 - Timing libs, hierarchial vs flat synthesis efficient flop coding styles
 
 # Day 3 - Combinational and Sequential Optimizations
