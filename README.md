@@ -156,6 +156,8 @@ Synthesis is the RTL design to the gate level translation, the *design  code* wh
 
 ![P10](https://user-images.githubusercontent.com/89923461/131937809-243cc4b0-a9bc-412a-9f7c-65b85f88a9a2.jpg)
 
+## .lib 
+
 
 
 # Day 2 - Timing libs, hierarchial vs flat synthesis efficient flop coding styles
