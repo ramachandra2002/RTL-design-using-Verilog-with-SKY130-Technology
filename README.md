@@ -158,7 +158,14 @@ Synthesis is the RTL design to the gate level translation, the *design  code* wh
 
 ## What is .lib?
 
-.lib is the collection of the logical modules which consists of the logic gates such as AND, OR, NOT ..... etc.
+.lib is the collection of the logical modules which consists of the logic gates such as AND, OR, NOT ..... etc. with different flavours( speeds of execution) which suits the design aspect. *.lib* contains these standard cells to implement any boolean logic.
+
+## Why different flavours of gate? 
+
+
+
+
+
 
 
 
