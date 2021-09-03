@@ -162,6 +162,16 @@ Synthesis is the RTL design to the gate level translation, the *design  code* wh
 
 ## Why different flavours of gate? 
 
+In a digital logic circuit, the delay of the combination circuit in it determines the maximum speed of operation of the whole circuit. For example, lets look at the setup with two flip flops
+
+![P11](https://user-images.githubusercontent.com/89923461/132020384-e65f0447-58e1-4a3a-8c86-4b5122b2160b.jpg)
+
+Here in this setup, to know about the maximum clock frequency (*minimum clock period*) to be applied on this circuit, we must know that it depends upon the propagation delay of FF A, combinational circuit and the setup time of the FF B. 
+
+## Why do we need Slow cells?
+
+
+
 
 
 
