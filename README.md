@@ -29,6 +29,8 @@ The design and the testbench is applied to the simulator *iVerilog*. As we alrea
 
 ![P2](https://user-images.githubusercontent.com/89923461/131781245-73a1a50b-c52b-4e69-9b72-ca53cad281c6.jpg)
 
+# 2- Labs using iVerilog and gtkwave
+
 ## Introduction to Lab
 Before staring the simulation, we must setup the essential files fot the lab. First of all we must create a directory called ***VLSI*** using the terminal.
 
@@ -118,6 +120,8 @@ The resulted *tb_good_mux.vcd* file can be viewed through waveform viewing tool,
 After launching the *gtkwave* simulator, under the uut (*unit under test*) we can drag the inputs and output signals ( *i0, i1, sel, y*). Adjust the time by zoom fit to view the entire 300 ns to see input and output waveform.
 
 ![P7](https://user-images.githubusercontent.com/89923461/131813333-97d1d7d3-50bc-45ff-9fe7-aa29c2d635b4.jpg)
+
+# 3- Yosys and Logic Synthesis
 
 ## Introduction to Yosys
 
