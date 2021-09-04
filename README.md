@@ -222,6 +222,35 @@ Now to synthesize the *good_mux* module, the command is
 
 ![P16](https://user-images.githubusercontent.com/89923461/132078859-ef7d036c-0e27-47dc-9eb0-597aaa6ad572.jpg)
 
+Now to generate the netlist, the command is
+
+`abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib `
+
+![P17](https://user-images.githubusercontent.com/89923461/132078996-289cc428-3656-45d9-8835-9b5b5a462bab.jpg)
+
+From the above screenshot, we can see that the RTL design is converted into the standard cell design from the library file we mentioned in the command. Now if we look a little close we can see that it has shown the input and output signals,
+
+```
+4.1.2. Re-integrating ABC results.
+ABC RESULTS:   sky130_fd_sc_hd__clkinv_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__nand2_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o21ai_0 cells:        1
+ABC RESULTS:        internal signals:        0
+ABC RESULTS:           input signals:        3
+ABC RESULTS:          output signals:        1
+```
+
+Now if we want to see the logic realized by the circuit, type `show`
+
+```
+5. Generating Graphviz representation of design.
+Writing dot description to `/home/ramachandra/.yosys_show.dot'.
+Dumping module good_mux to page 1.
+Exec: { test -f '/home/ramachandra/.yosys_show.dot.pid' && fuser -s '/home/ramachandra/.yosys_show.dot.pid'; } || ( echo $$ >&3; exec xdot '/home/ramachandra/.yosys_show.dot'; ) 3> '/home/ramachandra/.yosys_show.dot.pid' &
+```
+
+![P18](https://user-images.githubusercontent.com/89923461/132079135-c1696ebf-ec38-4230-a3b0-e1c11a6fe55c.jpg)
+
 
 
 
