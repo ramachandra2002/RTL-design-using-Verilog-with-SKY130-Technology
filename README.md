@@ -414,64 +414,55 @@ We can the direct instantiation of OR and AND gates in the flattened out netlist
 
 ![P19](https://user-images.githubusercontent.com/89923461/132085456-d978cd3f-7724-4bcf-ad9b-37427cc933ed.jpg)
 
+# 3 - Flops and Flop coding styles
 
+Let us observe and simulate the flop styles. First lets simulate the file *dff_asyncres.v* using iVerilog,
 
+`iverilog dff_asyncres.v tb_dff_asyncres.v`
 
+`./a.out`
 
+![P20](https://user-images.githubusercontent.com/89923461/132085938-c5ae71a5-5aae-4e98-b7fb-d98f9c6f763d.jpg)
 
+`gtkwave tb_dff_asyncres.vcd`
 
+![P21](https://user-images.githubusercontent.com/89923461/132086016-9e24c504-e482-4e94-a7fa-e5eefb5ce045.jpg)
 
+![P22](https://user-images.githubusercontent.com/89923461/132086028-282ed27c-e872-4e38-8844-e67ab9350664.jpg)
 
+Now let us look the file *dff_async_set.v* after launching gtkwave,
 
+![P23](https://user-images.githubusercontent.com/89923461/132086175-f35e3f2d-8428-4bb2-8678-f37ffa210490.jpg)
 
+![P24](https://user-images.githubusercontent.com/89923461/132086184-1c398ca6-ac96-4f11-a2e3-2f3e98f04f56.jpg)
 
+Now let us look the file *dff_syncres.v* after launching gtkwave,
 
+![P25](https://user-images.githubusercontent.com/89923461/132086304-b90b4a2c-fd2f-45d2-8ecb-630fa8d0cb96.jpg)
 
+![P26](https://user-images.githubusercontent.com/89923461/132086310-50ce6f8f-9fcf-4f2b-b623-ffaca16ee6ac.jpg)
 
+Now let us synthesis the ff design using yosys,
 
+![P27](https://user-images.githubusercontent.com/89923461/132086868-054f584f-2024-402f-9c73-a05146ceaf55.jpg)
 
+After typing `synth -top dff_asyncres `
 
+![p28](https://user-images.githubusercontent.com/89923461/132086921-112f3fc2-6923-4098-8ae4-b3cdca407d1c.jpg)
 
+`dfflibmap -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib`
 
+![p29](https://user-images.githubusercontent.com/89923461/132086981-67b1770c-9681-4528-8c64-0f9d3ee3f7b8.jpg)
 
+`abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib`
 
+![p30](https://user-images.githubusercontent.com/89923461/132087028-fd48fa94-ac2a-498f-b26c-2e687e8fe31b.jpg)
 
+Now let type the `show` command,
 
+![p31](https://user-images.githubusercontent.com/89923461/132087080-5bd1627e-e9f1-4f80-b6e6-a2213c2e0aaa.jpg)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![p32](https://user-images.githubusercontent.com/89923461/132087089-721534fc-bacb-4824-be90-03e64dc1a51c.jpg)
 
 # Day 3 - Combinational and Sequential Optimizations
 
