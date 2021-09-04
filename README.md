@@ -191,7 +191,39 @@ Now let us look at the illustration of a synthesis of a RTL design,
 
 ![P13](https://user-images.githubusercontent.com/89923461/132078192-c9ec44ec-9629-4841-8c1d-ad0662d84215.jpg)
 
-# 4 - Labs using Yosys
+# 4 - Labs using Yosys and SKY130 PDKs
+
+## Yosys for Synthesis
+
+Before invoking yosys we must in the directory *verilog_file*. To invoke yosys, just type `yosys`
+
+![P14](https://user-images.githubusercontent.com/89923461/132078442-2957c1f1-dcff-4faf-b984-b74a9906d057.jpg)
+
+In the above screenshot, we can see that after the `yosys` command, the *yosys* prompt is opened. Now the first thing to do is read the library.
+
+`yosys> read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib`
+
+```
+1. Executing Liberty frontend.
+Imported 428 cell types from liberty file.
+```
+
+Now lets read a verilog file (*good_mux.v*) by using the command,
+
+`read_verilog good_mux.v`
+
+After typing the command, we can see a result `Sucessfully finished Verilog Frontend`
+
+![P15](https://user-images.githubusercontent.com/89923461/132078765-a34840af-65d4-4d8d-b8fe-b510dda71041.jpg)
+
+Now to synthesize the *good_mux* module, the command is
+
+`synth -top good_mux`
+
+![P16](https://user-images.githubusercontent.com/89923461/132078859-ef7d036c-0e27-47dc-9eb0-597aaa6ad572.jpg)
+
+
+
 
 
 
