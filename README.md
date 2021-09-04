@@ -466,6 +466,102 @@ Now let type the `show` command,
 
 # Day 3 - Combinational and Sequential Optimizations
 
+In todays lab session we were going to do synthesis based on optimization. We have to search for opt related files,
+
+![p1](https://user-images.githubusercontent.com/89923461/132087315-edf27e24-223c-4be1-b601-7b1b7bc7f520.jpg)
+
+`gvim opt_check.v`
+
+![p2](https://user-images.githubusercontent.com/89923461/132087373-50731883-58ff-4d19-945e-fb0946946a28.jpg)
+
+Now lets synthesize the file using yosys,
+
+` read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib`
+
+![p3](https://user-images.githubusercontent.com/89923461/132087437-1445b11d-fafb-4ba0-a84d-39bf10e5215d.jpg)
+
+`read_verilog opt_check.v`
+
+![p4](https://user-images.githubusercontent.com/89923461/132087481-94e05faf-ce5e-4a2d-9487-dc90e1c449c6.jpg)
+
+'synth -top opt_check`
+
+![p5](https://user-images.githubusercontent.com/89923461/132087520-861dfeb5-f89f-453c-a4a1-a2ee92eecd98.jpg)
+
+The command for the constant propagation and optimization 
+
+`opt_clean -purge`
+
+![p6](https://user-images.githubusercontent.com/89923461/132087580-6b2d3328-d130-430f-a563-33b52ee1d6b4.jpg)
+
+`abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib`
+
+![p7](https://user-images.githubusercontent.com/89923461/132087614-a971736f-91b4-4427-afca-0e562c85892e.jpg)
+
+After the `show` command,
+
+![p8](https://user-images.githubusercontent.com/89923461/132087650-9ff59377-439d-46ef-96a5-cdba7679fe60.jpg)
+
+![p9](https://user-images.githubusercontent.com/89923461/132087657-8daa0584-8538-4af0-9438-81f20ea169ef.jpg)
+
+From the above image we can see that after synthesis it has been optimized to an AND gate.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Day 4 - GLS, blocking vs non-blocking and Synthesis-Simulation mismatch
 
 # Day 5 - If, case, for loop and for generate
