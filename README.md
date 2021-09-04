@@ -166,10 +166,32 @@ In a digital logic circuit, the delay of the combination circuit in it determine
 
 ![P11](https://user-images.githubusercontent.com/89923461/132020384-e65f0447-58e1-4a3a-8c86-4b5122b2160b.jpg)
 
-Here in this setup, to know about the maximum clock frequency (*minimum clock period*) to be applied on this circuit, we must know that it depends upon the propagation delay of FF A, combinational circuit and the setup time of the FF B. 
+Here in this setup, to know about the maximum clock frequency (*minimum clock period*) to be applied on this circuit, we must know that it depends upon the propagation delay of FF A, combinational circuit and the setup time of the FF B. In order to get minimum clock period, we must have faster cells. 
 
 ## Why do we need Slow cells?
 
+If we should not violate the hold time of the second flip flop, we must use slower cells. The minimum hold time depends upon propagation delay of FF A and combinational circuit. Essentially to avoid the *HOLD* issues, we need the slower cells.
+
+![P12](https://user-images.githubusercontent.com/89923461/132077196-57c2ff41-4bd9-4e36-8acf-b2a260233b18.jpg)
+
+For conclusion we can say that, for maximum performance we need faster cells and to avoid *HOLD* issues we need slower cells. *.lib* fulfills these issues by having the collection of both type of cells.
+
+## Faster vs Slower cells
+
+In a digital circuit, capacitance acts as the load for the circuit. So the delay depends upon the charging and discharging time of the capacitor, faster charging leads to less delay and slower charging and discharging leads to more delay. If we need faster cells, then the transistor used must be capable of sourcing more power.
+
+Wider transistors promises us less delay but at the cost of more area and power. Narrow transistors shows less delay with less area and power. 
+
+## Selection of cells
+
+We need to guide the synthesizer to select the different types of cells, which suits the effective implementation of our digital circuit. We know that, faster cells must have more power and area and violates hold time.
+In the other hand, Slower cells do not meet the required performance. So, we must provide ***constraints*** to the synthesizer in order to guide the selection of the cells. 
+
+Now let us look at the illustration of a synthesis of a RTL design,
+
+![P13](https://user-images.githubusercontent.com/89923461/132078192-c9ec44ec-9629-4841-8c1d-ad0662d84215.jpg)
+
+# 4 - Labs using Yosys
 
 
 
