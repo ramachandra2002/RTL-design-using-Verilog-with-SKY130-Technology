@@ -331,7 +331,19 @@ Now if we type `!gvim good_mux_netlist.v`, the simplified netlist can be viewed.
 
 ## .lib 
 
-We already know about .lib, but now lets look what it looks like in an editor
+We already know about .lib, but now lets look what it looks like in an editor. After going to the *verilog_files* directory, type
+
+`gvim ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib`
+
+![P1](https://user-images.githubusercontent.com/89923461/132082501-c720d52d-f3ad-402c-b21b-13321a4d5e74.jpg)
+
+![P2](https://user-images.githubusercontent.com/89923461/132082903-a46219f9-73f7-446b-91d4-e185fa7e76ea.jpg)
+
+
+
+
+
+
 
 
 
