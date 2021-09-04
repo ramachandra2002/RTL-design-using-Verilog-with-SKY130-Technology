@@ -371,7 +371,54 @@ The file we are going to synthesize is *multiple_modules*. Lets open it by `gvim
 
 ![P8](https://user-images.githubusercontent.com/89923461/132084439-34fcb471-14c7-4197-aae2-b7551dba4bf2.jpg)
 
-This is the multiple_modules.v file with two sub modules (OR and AND ), the main module instantiates the both modules within it. Now let us synthesis the file using yosys (*we saw how to synthesize earlier. To know about the synthesizing process click [here](https://github.com/ramachandra2002/RTL-design-using-Verilog-with-SKY130-Technology#yosys-for-synthesis)*)
+This is the multiple_modules.v file with two sub modules (OR and AND ), the main module instantiates the both modules within it. Now let us synthesis the file using yosys (*we saw how to synthesize earlier. To know about the synthesizing process click [here](https://github.com/ramachandra2002/RTL-design-using-Verilog-with-SKY130-Technology#yosys-for-synthesis)*). After the `synth -top multiple_modules`
+
+![P9](https://user-images.githubusercontent.com/89923461/132084772-7a53636c-2aa7-4ca2-8578-a27b2e777d3d.jpg)
+
+![P10](https://user-images.githubusercontent.com/89923461/132084880-b2a9400b-5491-48ab-9b42-9b2c850eb48d.jpg)
+
+After the `show multiple_modules` command,
+
+![P11](https://user-images.githubusercontent.com/89923461/132084914-ab7c4767-38ee-4185-a405-50de854285be.jpg)
+
+![P12](https://user-images.githubusercontent.com/89923461/132084930-c50a70c1-bae7-448c-af8f-e607cea76bf1.jpg)
+
+We can see the modules itself inside the multiple_modules instance instead of the AND and OR gates. Here the hierarchies are preserved, so it is called as *Hierarchial design*.
+Now let us look the netlist generated from this design,
+
+`write_verilog -noattr multiple_modules_hier.v'
+
+`!gvim  multiple_modules_hier.v`
+
+![P13](https://user-images.githubusercontent.com/89923461/132085118-9cd83d39-8f92-45c7-a05c-2179985b1ef7.jpg)
+
+From the above image, we can see that the hierarchy is preserved. Now lets generate a flat netlist using the command `flatten`
+
+![P14](https://user-images.githubusercontent.com/89923461/132085208-56c0b8b3-5f4a-4a00-b46b-d41eb2ac7179.jpg)
+
+`write_verilog multiple_modules_flat.v`
+
+![P15](https://user-images.githubusercontent.com/89923461/132085250-2e1a48f1-3fe0-4258-a76c-5f8452a26ec2.jpg)
+
+`!gvim multiple_modules_flat.v`
+
+![P16](https://user-images.githubusercontent.com/89923461/132085279-7bf0401a-114c-4b79-9355-0f179c06782e.jpg)
+
+Now for comparison of both synthesis, use `:vsp` command
+
+![P17](https://user-images.githubusercontent.com/89923461/132085344-8e373991-9514-4973-be1d-1656c9294ca4.jpg)
+
+We can the direct instantiation of OR and AND gates in the flattened out netlist instead of the hierarchial design. Let us see the synthesis of the flat design by typing `show` command,
+
+![P18](https://user-images.githubusercontent.com/89923461/132085455-e7c7f920-bebd-4513-bbfd-3552f3bfecfd.jpg)
+
+![P19](https://user-images.githubusercontent.com/89923461/132085456-d978cd3f-7724-4bcf-ad9b-37427cc933ed.jpg)
+
+
+
+
+
+
 
 
 
