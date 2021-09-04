@@ -337,7 +337,44 @@ We already know about .lib, but now lets look what it looks like in an editor. A
 
 ![P1](https://user-images.githubusercontent.com/89923461/132082501-c720d52d-f3ad-402c-b21b-13321a4d5e74.jpg)
 
+>Note: To off the red overlay on the lines, type `:syn off`. This disables the red highlighted syntax.
+
 ![P2](https://user-images.githubusercontent.com/89923461/132082903-a46219f9-73f7-446b-91d4-e185fa7e76ea.jpg)
+
+If we go down the library file we see many lines mentioning *cell*, with different flavours. To search for the *cell* type, `/cell ` and `:g//`
+
+![P3](https://user-images.githubusercontent.com/89923461/132083153-1db2e572-687c-47ca-bbd7-e17c620ff305.jpg)
+
+## Inside a standard cell
+
+Now lets look inside a standard cell in the library, for example let us search for a AND gate with the command `/cell .*and`
+
+![P4](https://user-images.githubusercontent.com/89923461/132083330-99344090-1173-46dd-a35c-aae985cfc7eb.jpg)
+
+If we look closer we can see the four combination of the data for the two inputs present in the 2 input AND gate
+
+![P5](https://user-images.githubusercontent.com/89923461/132083504-bbc49980-db3b-413f-b9f2-53aa1fac3270.jpg)
+
+Now lets compare two AND gates with a difference in the value of area
+
+![P6](https://user-images.githubusercontent.com/89923461/132083630-57b04575-137b-4398-8eea-4018b3e3d1e1.jpg)
+
+From the above screenshot, we can clearly see that ***cell("sky130_fd_sc_hd_and2_2")*** has more area than the ***cell("sky130_fd_sc_hd_and2_0")***. Now for better understanding in the comparison let us take the three flavours of the same cell 2 input AND.
+
+![P7](https://user-images.githubusercontent.com/89923461/132083834-f491e93a-3fc5-458a-9e00-053da090d47a.jpg)
+
+We can see that for the three cells ( ***cell("sky130_fd_sc_hd_and2_0"), cell("sky130_fd_sc_hd_and2_2"), cell("sky130_fd_sc_hd_and2_4")***) the area is increased and power is also increased.
+
+# 2 - Hierarchial vs Flat Synthesis
+
+
+
+
+
+
+
+
+
 
 
 
