@@ -1,1 +1,1 @@
-# Day-1 Images ans Screenshots
+Day 1 - Images and Screenshots
