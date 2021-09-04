@@ -524,64 +524,85 @@ By using similar steps from the above synthesis, we are going to synthesize the 
 
 ![p15](https://user-images.githubusercontent.com/89923461/132088273-a86ff99a-f8f7-4a2f-bc93-ef32e187492c.jpg)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Day 4 - GLS, blocking vs non-blocking and Synthesis-Simulation mismatch
+
+Gate Level Simulation is run for verifiction of logic in the circuit and to check the timings and the GLS must be run with delay annotation. 
+
+## Synthesis - Simulation Mismatch
+
+There is need for verification because of this synthesis - simulation mismatch. Major reasons for this mismatch are,
+ * missing sensitivity list
+ * blocking & non-blocking assignments
+
+## Missing Sensitivity List
+
+The simulator generally works based on the activity, in other words the change in inputs will initiate to get the outputs. For example, let take a MUX 
+
+```
+module mux(input i0, input i1, input sel,output reg y)
+
+always@(sel)
+begin
+  if(sel)
+    y=i1;
+  else
+    y=i0;
+end
+endmodule
+```
+From the above code snippet, the always block works only when the select is high. So it is insensitive to the other inputs such as i0 and i1. Once there is a change in the sel value the i1 values will be assigned to the y, but the changes of i1 will not be reflected in the output y. So that is wrong and insensitive. This is called as missing elements of selectivity list.
+
+The correct way of writing the code is,
+
+```
+module mux(input i0, input i1, input sel,output reg y)
+
+always@(*)
+begin
+  if(sel)
+    y=i1;
+  else
+    y=i0;
+end
+endmodule
+
+```
+Here in this code, `always@(*)` the star means the always block will be executed whenever there is a change in the signals.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Day 5 - If, case, for loop and for generate
 
