@@ -697,6 +697,16 @@ For the understanding let us use MUX in the form of for loop,
 
 To understand generate statements lets find an application using Ripple carry adder,
 
+![p8](https://user-images.githubusercontent.com/89923461/132093729-291bc138-cdec-427c-a351-aeeb5e8f64ab.jpg)
+
+![p9](https://user-images.githubusercontent.com/89923461/132093724-1e185440-a542-452b-af57-167d3e06ca5d.jpg)
+
+![p10](https://user-images.githubusercontent.com/89923461/132093726-9e064a23-9f62-4212-8668-96b4996edbd9.jpg)
+
+![p11](https://user-images.githubusercontent.com/89923461/132093727-5e86169a-d96d-4c2f-97f9-537f2d3d4e70.jpg)
+
+
+
 
 
 
