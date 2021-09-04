@@ -608,40 +608,50 @@ To demonstrate the mismatch between the synthesis and simulation, let us take a 
 
 ![p7](https://user-images.githubusercontent.com/89923461/132091452-b819a2b6-3155-4eee-98dc-0be4b5ee7079.jpg)
 
+The above screenshot depicts the RTL simulation of the bad_mux design. Now let us synthesize and the write the file to Gate level simulation,
 
+![p8](https://user-images.githubusercontent.com/89923461/132091811-9c117792-7e2c-4ad9-af22-73e7d3a99043.jpg)
 
+![p9](https://user-images.githubusercontent.com/89923461/132091805-1ce167ba-5457-4852-bbea-cd542cfcb846.jpg)
 
+![p10](https://user-images.githubusercontent.com/89923461/132091806-014a3e2c-28db-4271-9254-8cd37ed9cbf6.jpg)
 
+![p11](https://user-images.githubusercontent.com/89923461/132091807-bc165372-09f6-4c18-8d3d-8849a9a31536.jpg)
 
+![p12](https://user-images.githubusercontent.com/89923461/132091809-f90a57b6-4903-492f-8c02-716ddd064b8b.jpg)
 
+After performing GLS, there will be a difference in the waveform graphs between the RTL simulation and GLS simulated one.
 
+## Non-Blocking vs Blocking Synthesis-Simulation Mismatch
 
+`iverilog blocking_caveat.v tb_blocking_caveat.v`
 
+`./a.out`
 
+`gtkwave tb_blocking_caveat.vcd	`
 
+The RTL simulation of the file,
 
+![p13](https://user-images.githubusercontent.com/89923461/132092113-055556b8-8adc-4805-9c7f-05350098c0b7.jpg)
 
+![p14](https://user-images.githubusercontent.com/89923461/132092147-189dcd64-6436-46a4-9f46-1a64b5ee1033.jpg)
 
+Now lets synthesis using yosys,
 
+![p15](https://user-images.githubusercontent.com/89923461/132092350-a521c188-c0ae-4424-8415-4af3fda42daa.jpg)
 
+![p16](https://user-images.githubusercontent.com/89923461/132092344-4436b5db-06a9-4833-ae65-01b61c417128.jpg)
 
+![p17](https://user-images.githubusercontent.com/89923461/132092346-7c48d5dd-1277-48d6-ae01-ef4a245692a5.jpg)
 
+![p18](https://user-images.githubusercontent.com/89923461/132092347-d93a65ec-83a9-4e7a-ad44-1d62648a1fec.jpg)
 
+![p19](https://user-images.githubusercontent.com/89923461/132092349-a624745c-b603-405c-a1d2-292becc584ca.jpg)
 
-
-
-
-
-
-
-
-
-
-
-
-
+After performing there will be difference between thest simulations.
 
 # Day 5 - If, case, for loop and for generate
+
 
 
 
