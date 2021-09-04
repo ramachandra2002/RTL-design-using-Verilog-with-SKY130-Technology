@@ -648,9 +648,19 @@ Now lets synthesis using yosys,
 
 ![p19](https://user-images.githubusercontent.com/89923461/132092349-a624745c-b603-405c-a1d2-292becc584ca.jpg)
 
-After performing there will be difference between thest simulations.
+After performing GLS,
+
+![p20](https://user-images.githubusercontent.com/89923461/132092658-13505af8-71cd-4f04-a376-13d0833ede29.jpg)
+
+![p21](https://user-images.githubusercontent.com/89923461/132092709-bfafed83-f952-4553-a470-43301e0e5883.jpg)
+
+![p22](https://user-images.githubusercontent.com/89923461/132092710-0a2d3d29-cda3-4c58-9878-9d6adfae1069.jpg)
+
+We can see the clear difference between the RTL and GLS simulations of the design.
 
 # Day 5 - If, case, for loop and for generate
+
+## If else constructs
 
 
 
