@@ -255,18 +255,53 @@ From the above screenshot, we can see the graphical representation of the *good_
 
 ![P19](https://user-images.githubusercontent.com/89923461/132079671-96bfd13c-4a18-4d82-994d-736d48274f12.jpg)
 
-
-
-
-
-
-
-
-
-
-
+LAB 3
 
 # Day 2 - Timing libs, hierarchial vs flat synthesis efficient flop coding styles
+
+# 1 - Introduction to timing .libs
+
+## .lib 
+
+We already know about .lib, but now lets look what it looks like in an editor
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Day 3 - Combinational and Sequential Optimizations
 
