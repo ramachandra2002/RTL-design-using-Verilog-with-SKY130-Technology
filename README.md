@@ -251,6 +251,9 @@ Exec: { test -f '/home/ramachandra/.yosys_show.dot.pid' && fuser -s '/home/ramac
 
 ![P18](https://user-images.githubusercontent.com/89923461/132079135-c1696ebf-ec38-4230-a3b0-e1c11a6fe55c.jpg)
 
+From the above screenshot, we can see the graphical representation of the *good_mux* using a NOT, OR and a 2 - input NAND gates. For even simpler representation of the gates,
+
+![P19](https://user-images.githubusercontent.com/89923461/132079671-96bfd13c-4a18-4d82-994d-736d48274f12.jpg)
 
 
 
