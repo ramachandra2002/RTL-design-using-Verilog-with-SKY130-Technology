@@ -512,6 +512,19 @@ From the above image we can see that after synthesis it has been optimized to an
 
 By using similar steps from the above synthesis, we are going to synthesize the file *dff_const1.v*
 
+![p10](https://user-images.githubusercontent.com/89923461/132088274-e1cc707f-d004-4d88-b213-0acd6757631f.jpg)
+
+![p11](https://user-images.githubusercontent.com/89923461/132088275-f8b7d437-26ae-48fc-9b63-bf5c93c976c4.jpg)
+
+![p12](https://user-images.githubusercontent.com/89923461/132088276-96f9e9d2-d34c-4aa3-aa55-13a277d19b54.jpg)
+
+![p13](https://user-images.githubusercontent.com/89923461/132088277-8de005c4-894d-4cb7-b908-650101092e47.jpg)
+
+![p14](https://user-images.githubusercontent.com/89923461/132088278-87f61664-6db6-4b82-ba26-04c590288993.jpg)
+
+![p15](https://user-images.githubusercontent.com/89923461/132088273-a86ff99a-f8f7-4a2f-bc93-ef32e187492c.jpg)
+
+
 
 
 
