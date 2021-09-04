@@ -662,6 +662,45 @@ We can see the clear difference between the RTL and GLS simulations of the desig
 
 ## If else constructs
 
+This is a general if else construct,
+
+```
+if(condtion1)
+ -----
+elseif(condition2)
+ -----
+else
+ -----
+```
+
+Lets start with incomplete if,
+
+![p1](https://user-images.githubusercontent.com/89923461/132092974-d68f738f-84af-4fbc-9091-3fee9694aeee.jpg)
+
+![p2](https://user-images.githubusercontent.com/89923461/132092971-7b4c08de-aefa-46b0-b688-6ab0b95c6645.jpg)
+
+Lets see it waveform,
+
+![p3](https://user-images.githubusercontent.com/89923461/132093104-1335ca28-3a9c-4965-987a-e8accfed0bb9.jpg)
+
+## For loop and For generate
+
+For the understanding let us use MUX in the form of for loop,
+
+![p4](https://user-images.githubusercontent.com/89923461/132093398-7c222d92-0173-4b77-8697-9a80c669a35b.jpg)
+
+![p5](https://user-images.githubusercontent.com/89923461/132093399-e340560a-4c60-4adb-ab54-3d26d2652609.jpg)
+
+![p6](https://user-images.githubusercontent.com/89923461/132093394-99fde1ed-024c-43a6-8954-9316d6dec9f6.jpg)
+
+![p7](https://user-images.githubusercontent.com/89923461/132093397-98f310a6-8e27-4e48-923b-774acd78dc11.jpg)
+
+To understand generate statements lets find an application using Ripple carry adder,
+
+
+
+
+
 
 
 
