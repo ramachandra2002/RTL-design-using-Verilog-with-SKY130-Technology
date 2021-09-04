@@ -316,17 +316,14 @@ To get a even more simplified netlist, the command is
 
 `write_verilog -noattr good_mux_netlist.v`
 
-Now if we type `!gvim good_mux_netlist.v`
+```
+7. Executing Verilog backend.
+Dumping module `\good_mux'.
+```
 
+Now if we type `!gvim good_mux_netlist.v`, the simplified netlist can be viewed.
 
-
-
-
-
-
-
-
-
+![P21](https://user-images.githubusercontent.com/89923461/132080509-cf85f3b5-f3f2-40a2-8f70-f7071e86f9ed.jpg)
 
 # Day 2 - Timing libs, hierarchial vs flat synthesis efficient flop coding styles
 
