@@ -569,7 +569,44 @@ endmodule
 ```
 Here in this code, `always@(*)` the star means the always block will be executed whenever there is a change in the signals.
 
+## Blocking and Non-Blocking Assignments
 
+These two assignments are always written inside the blocks. Non blocking assignments does parallel evaluation, executes RHS and will assign the same to the LHS. Blocking Assignments executes the code in the same order of writing.
+
+## Labs on Synthesis Simulation Mismatch
+
+Lets take the file `tb_ternary_operator_mux.v` for demonstration. After the iVerilog, gtkwave wave simulation,
+
+```
+iverilog ternary_operator_mux.v tb_ternary_operator_mux.v 
+./a.out
+gtkwave tb_ternary_operator_mux.vcd
+```
+![p1](https://user-images.githubusercontent.com/89923461/132090788-ab4e0789-90ae-44dc-8254-ed551827795a.jpg)
+
+![p2](https://user-images.githubusercontent.com/89923461/132090806-3bf05f56-c763-45ce-9f39-b618d8624ec9.jpg)
+
+Now lets synthesize the design using yosys,
+
+```
+read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog ternary_operator_mux.v
+synth -top ternary_operator_mux
+abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+write_verilog -noattr ternary_operator_mux_net.v
+show
+```
+![p3](https://user-images.githubusercontent.com/89923461/132091110-5aed3844-eb6d-45d6-9674-5121d02ae8e8.jpg)
+
+![p4](https://user-images.githubusercontent.com/89923461/132091133-cf64f2eb-6b98-4b7a-bbd3-bb40985155eb.jpg)
+
+To demonstrate the mismatch between the synthesis and simulation, let us take a example of *bad_mux.v*,
+
+![p5](https://user-images.githubusercontent.com/89923461/132091393-f0d995e0-cce7-4622-b560-7c269579b68b.jpg)
+
+![p6](https://user-images.githubusercontent.com/89923461/132091433-0d768e5f-656b-4541-ab1c-017b0b666007.jpg)
+
+![p7](https://user-images.githubusercontent.com/89923461/132091452-b819a2b6-3155-4eee-98dc-0be4b5ee7079.jpg)
 
 
 
