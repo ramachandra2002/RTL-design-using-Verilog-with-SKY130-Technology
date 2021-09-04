@@ -466,6 +466,8 @@ Now let type the `show` command,
 
 # Day 3 - Combinational and Sequential Optimizations
 
+## Combinational Logic Optimization
+
 In todays lab session we were going to do synthesis based on optimization. We have to search for opt related files,
 
 ![p1](https://user-images.githubusercontent.com/89923461/132087315-edf27e24-223c-4be1-b601-7b1b7bc7f520.jpg)
@@ -505,6 +507,10 @@ After the `show` command,
 ![p9](https://user-images.githubusercontent.com/89923461/132087657-8daa0584-8538-4af0-9438-81f20ea169ef.jpg)
 
 From the above image we can see that after synthesis it has been optimized to an AND gate.
+
+## Sequential Logic Optimization 
+
+By using similar steps from the above synthesis, we are going to synthesize the file *dff_const1.v*
 
 
 
