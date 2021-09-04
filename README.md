@@ -705,7 +705,10 @@ To understand generate statements lets find an application using Ripple carry ad
 
 ![p11](https://user-images.githubusercontent.com/89923461/132093727-5e86169a-d96d-4c2f-97f9-537f2d3d4e70.jpg)
 
+# Acknowledgements
 
+1. Mr.Kunal Ghosh, VLSI System Design Pvt Ltd
+2. Mr.Shon Taware, Teaching Assisstant, VLSI System Design Pvt Ltd 
 
 
 
