@@ -4,7 +4,7 @@
 
 # Day 1 - Introduction to Verilog RTL design and Synthesis
 
-# 1- Introduction to iVerilog design test bench
+# Introduction to iVerilog design test bench
 
 ## Required Terminologies 
 ### Simulator
@@ -29,7 +29,7 @@ The design and the testbench is applied to the simulator *iVerilog*. As we alrea
 
 ![P2](https://user-images.githubusercontent.com/89923461/131781245-73a1a50b-c52b-4e69-9b72-ca53cad281c6.jpg)
 
-# 2- Labs using iVerilog and gtkwave
+# Labs using iVerilog and gtkwave
 
 ## Introduction to Lab
 Before staring the simulation, we must setup the essential files fot the lab. First of all we must create a directory called ***VLSI*** using the terminal.
@@ -121,7 +121,7 @@ After launching the *gtkwave* simulator, under the uut (*unit under test*) we ca
 
 ![P7](https://user-images.githubusercontent.com/89923461/131813333-97d1d7d3-50bc-45ff-9fe7-aa29c2d635b4.jpg)
 
-# 3- Yosys and Logic Synthesis
+# Yosys and Logic Synthesis
 
 ## Introduction to Yosys
 
@@ -191,7 +191,7 @@ Now let us look at the illustration of a synthesis of a RTL design,
 
 ![P13](https://user-images.githubusercontent.com/89923461/132078192-c9ec44ec-9629-4841-8c1d-ad0662d84215.jpg)
 
-# 4 - Labs using Yosys and SKY130 PDKs
+# Labs using Yosys and SKY130 PDKs
 
 ## Yosys for Synthesis
 
@@ -327,7 +327,7 @@ Now if we type `!gvim good_mux_netlist.v`, the simplified netlist can be viewed.
 
 # Day 2 - Timing libs, hierarchial vs flat synthesis efficient flop coding styles
 
-# 1 - Introduction to timing .libs
+# Introduction to timing .libs
 
 ## .lib 
 
@@ -365,7 +365,7 @@ From the above screenshot, we can clearly see that ***cell("sky130_fd_sc_hd_and2
 
 We can see that for the three cells ( ***cell("sky130_fd_sc_hd_and2_0"), cell("sky130_fd_sc_hd_and2_2"), cell("sky130_fd_sc_hd_and2_4")***) the area is increased and power is also increased.
 
-# 2 - Hierarchial vs Flat Synthesis
+# Hierarchial vs Flat Synthesis
 
 The file we are going to synthesize is *multiple_modules*. Lets open it by `gvim multiple-modules.v`
 
@@ -414,7 +414,7 @@ We can the direct instantiation of OR and AND gates in the flattened out netlist
 
 ![P19](https://user-images.githubusercontent.com/89923461/132085456-d978cd3f-7724-4bcf-ad9b-37427cc933ed.jpg)
 
-# 3 - Flops and Flop coding styles
+# Flops and Flop coding styles
 
 Let us observe and simulate the flop styles. First lets simulate the file *dff_asyncres.v* using iVerilog,
 
