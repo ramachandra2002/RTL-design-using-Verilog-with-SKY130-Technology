@@ -367,6 +367,12 @@ We can see that for the three cells ( ***cell("sky130_fd_sc_hd_and2_0"), cell("s
 
 # 2 - Hierarchial vs Flat Synthesis
 
+The file we are going to synthesize is *multiple_modules*. Lets open it by `gvim multiple-modules.v`
+
+![P8](https://user-images.githubusercontent.com/89923461/132084439-34fcb471-14c7-4197-aae2-b7551dba4bf2.jpg)
+
+This is the multiple_modules.v file with two sub modules (OR and AND ), the main module instantiates the both modules within it. Now let us synthesis the file using yosys (*we saw how to synthesize earlier. To know about the synthesizing process click [here](https://github.com/ramachandra2002/RTL-design-using-Verilog-with-SKY130-Technology#yosys-for-synthesis)*)
+
 
 
 
